@@ -1,0 +1,176 @@
+.sketches-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: -30px auto 50px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.sketches-grid {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.sketch-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sketch-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.sketch-photo {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.sketch-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sketch-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 14px;
+}
+
+.sketch-info {
+  padding: 25px;
+  text-align: center;
+}
+
+.sketch-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.sketch-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.sketch-price {
+  font-size: 22px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.modal-close:hover {
+  color: #333;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.modal-sketch-name {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.modal-sketch-price {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.booking-form .form-group {
+  margin-bottom: 20px;
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 14px;
+}
+
+.booking-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.booking-form input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.btn-full {
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .sketches-intro {
+    margin-top: -20px;
+  }
+  
+  .modal-content {
+    padding: 30px 20px;
+  }
+}
