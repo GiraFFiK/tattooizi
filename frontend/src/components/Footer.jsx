@@ -8,9 +8,9 @@ function Footer() {
     <footer className="footer">
       <div className="container footer-container">
         <div className="footer-section">
-          <h3 className="footer-title">TATTOO STUDIO</h3>
+          <h3 className="footer-title">tattooizi</h3>
           <p className="footer-text">
-            Профессиональный тату салон с опытными мастерами
+            Тату студия на питерский лад
           </p>
         </div>
 
@@ -29,7 +29,7 @@ function Footer() {
         <div className="footer-section">
           <h4 className="footer-subtitle">Контакты</h4>
           <ul className="footer-contact">
-            <li>Москва, ул. Примерная, 123</li>
+            <li>г. Челябинск, Свердловский проспект 78</li>
             <li>+7 (999) 000-00-00</li>
             <li>info@tattoostudio.ru</li>
           </ul>

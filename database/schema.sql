@@ -7,6 +7,8 @@ CREATE TABLE masters (
     description TEXT,
     photo VARCHAR(255),
     instagram VARCHAR(255),
+    telegram VARCHAR(255),
+    vk VARCHAR(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -98,3 +100,8 @@ CREATE TABLE payments (
     yandex_payment_id VARCHAR(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+-- Создание администратора по умолчанию
+-- Логин: admin, Пароль: nhbrjirb3ldfrjnf2!
+INSERT INTO admins (username, password_hash) VALUES 
+('admin', '$2b$12$KLswblP03fXmixlROQga7.4PFR/18dayqYoZ4NNcBI7vPvNCjxtxa');

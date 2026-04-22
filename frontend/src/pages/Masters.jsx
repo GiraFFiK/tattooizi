@@ -17,21 +17,27 @@ function Masters() {
         name: 'Алексей Иванов',
         description: 'Специализируюсь на реализме и портретах. Опыт работы более 5 лет.',
         photo: null,
-        instagram: '@alex_tattoo'
+        instagram: '@alex_tattoo',
+        telegram: '@alex_telegram',
+        vk: '@alex_vk'
       },
       {
         id: 2,
         name: 'Мария Петрова',
         description: 'Мастер художественной татуировки, работаю в стилях акварель и графика.',
         photo: null,
-        instagram: '@maria_art'
+        instagram: '@maria_art',
+        telegram: '@maria_telegram',
+        vk: '@maria_vk'
       },
       {
         id: 3,
         name: 'Дмитрий Сидоров',
         description: 'Олд скул и нью скул татуировки. Индивидуальный подход к каждому клиенту.',
         photo: null,
-        instagram: '@dim_tattoo'
+        instagram: '@dim_tattoo',
+        telegram: '@dim_telegram',
+        vk: '@dim_vk'
       }
     ];
     
@@ -72,6 +78,44 @@ function Masters() {
                       <span>Фото</span>
                     </div>
                   )}
+                  {/* Затемнение с ссылками на соцсети */}
+                  <div className="master-card-overlay">
+                    <div className="master-social-links">
+                      {master.instagram && (
+                        <a 
+                          href={`https://instagram.com/${master.instagram.replace('@', '')}`} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          title="Instagram"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          📷
+                        </a>
+                      )}
+                      {master.telegram && (
+                        <a 
+                          href={`https://t.me/${master.telegram.replace('@', '')}`} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          title="Telegram"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          ✈️
+                        </a>
+                      )}
+                      {master.vk && (
+                        <a 
+                          href={`https://vk.com/${master.vk.replace('@', '')}`} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          title="VK"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          💙
+                        </a>
+                      )}
+                    </div>
+                  </div>
                 </div>
                 <div className="master-card-info">
                   <h3 className="master-card-name">{master.name}</h3>

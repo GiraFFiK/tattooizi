@@ -13,7 +13,7 @@ function Contacts() {
               
               <div className="contact-item">
                 <h3>Адрес</h3>
-                <p>Москва, ул. Примерная, 123</p>
+                <p>г. Челябинск, Свердловский проспект 78</p>
               </div>
               
               <div className="contact-item">
@@ -23,7 +23,7 @@ function Contacts() {
               
               <div className="contact-item">
                 <h3>Email</h3>
-                <p>info@tattoostudio.ru</p>
+                <p>info@tattooizi.ru</p>
               </div>
               
               <div className="contact-item">
@@ -42,10 +42,15 @@ function Contacts() {
             </div>
             
             <div className="contact-map">
-              <div className="map-placeholder">
-                <span>Карта проезда</span>
-                <p>Здесь будет интегрирована Яндекс.Карта или Google Maps</p>
-              </div>
+              <iframe 
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A0&amp;source=constructor&amp;text=Челябинск%2C%20Свердловский%20проспект%2078" 
+                width="100%" 
+                height="400" 
+                frameBorder="0"
+                allowFullScreen={true}
+                title="Карта tattooizi"
+                style={{ borderRadius: '8px' }}
+              ></iframe>
             </div>
           </div>
           
