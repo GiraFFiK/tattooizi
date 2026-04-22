@@ -73,12 +73,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit;
         }
         
-        $stmt = $pdo->prepare("INSERT INTO masters (name, description, photo, instagram) VALUES (?, ?, ?, ?)");
+        $stmt = $pdo->prepare("INSERT INTO masters (name, description, photo, instagram, telegram, vk) VALUES (?, ?, ?, ?, ?, ?)");
         $stmt->execute([
             $data['name'],
             $data['description'] ?? null,
             $data['photo'] ?? null,
-            $data['instagram'] ?? null
+            $data['instagram'] ?? null,
+            $data['telegram'] ?? null,
+            $data['vk'] ?? null
         ]);
         
         echo json_encode(['success' => true, 'id' => $pdo->lastInsertId()]);

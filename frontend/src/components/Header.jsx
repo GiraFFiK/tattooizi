@@ -18,7 +18,7 @@ function Header() {
     <header className="header">
       <div className="container header-container">
         <Link to="/" className="logo">
-          TATTOO STUDIO
+          tattooizi
         </Link>
         
         <nav className="nav">
