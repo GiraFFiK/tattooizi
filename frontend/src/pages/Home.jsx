@@ -7,8 +7,8 @@ function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="container hero-content">
-          <h1 className="hero-title">TATTOOIZI</h1>
-          <p className="hero-subtitle">Тату студия на питерский лад</p>
+          <h1 className="hero-title">tattooizi</h1>
+          <p className="hero-subtitle">тату студия на питерский лад</p>
           <Link to="/masters" className="btn">Наши мастера</Link>
         </div>
       </section>
