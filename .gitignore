@@ -1,37 +1,81 @@
-```gitignore
-# Compiled and build artifacts
-*.pyc
+```
+# Python
 __pycache__/
-*.o
-*.obj
-*.class
-*.exe
-*.dll
+*.py[cod]
+*$py.class
 *.so
-*.a
-*.out
-
-# Dependencies
-node_modules/
-venv/
-.venv/
-.env
-.env.local
-.env.*
-
-# Build directories
-dist/
+.Python
 build/
-target/
-*.log
-*.tmp
-*.swp
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Editors
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# IDE
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# System files
-.DS_Store
-Thumbs.db
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.local
+*.env.*
+
+# Coverage
+.coverage
+htmlcov/
+.coverage.*
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Pytest
+.pytest_cache/
+
+# Mypy
+.mypy_cache/
+
+# Temporary files
+*.tmp
+*.temp
+*~
 ```
